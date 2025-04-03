@@ -7,7 +7,7 @@ app = FastAPI(title="API de ejemplo para chacharitas")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chapiritas.org", "https://www.chapiritas.org"],
+    allow_origins=["https://chacharitas.org", "https://www.chacharitas.org"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
