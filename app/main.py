@@ -7,11 +7,12 @@ app = FastAPI(title="API de ejemplo para chacharitas")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chapiritas.org"],  # Cambia esto según tu dominio en producción
+    allow_origins=["https://chapiritas.org", "https://www.chapiritas.org"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Incluye el router de usuarios
 app.include_router(users_router, prefix="", tags=["users"])
